@@ -42,7 +42,7 @@ PARAMETER num_thread 8
 
 **What it does:** Sets the number of CPU threads used for inference when model layers need CPU computation.
 
-**Why 8:** M1 Max has 6 performance cores + 4 efficiency cores. Using 8 threads keeps the performance cores busy without oversubscribing, matching the hardware's sweet spot for inference workloads.
+**Why 8:** M1 Max has 8 performance cores and 2 efficiency cores. Using 8 threads keeps all performance cores busy without oversubscribing, matching the hardware's sweet spot for inference workloads.
 
 ### `num_batch`
 
